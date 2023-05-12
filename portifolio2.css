@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body{
+  background-color: aliceblue;
+  margin: 2%;
+  padding: auto;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+
+
+#titulo {
+ color: #0c0c0c;
+  text-decoration: none;
+  font-size: 26px;
+  margin: 0;
+  overflow: hidden;
+  border-right: .11em solid rgba(255, 166, 0, 0.514);
+  white-space: nowrap;
+  animation: typing 2s steps(44, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+  to {
+    width: 10%
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+.nav-list li:last-child {
+  margin-right: 0;
+}
+
+.nav-list li a {
+  font-size: large;
+  font-weight: 200;
+  color: #000000;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    color: #f1c40f;
+  }
+}
+
+.nav-list li a:hover {
+  color: #f1c40f;
+}
+
+
+main {
+  max-width: 900px;
+  margin: 0 auto 55px;
+  padding: 10px;
+}
+
+#sobre p{
+  margin-top: 14%;
+  font-size: large;
+  font-weight:500;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section p{
+  margin-top: 6%;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+li a{
+
+  color: #fff;
+  display: inline-block;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+footer {
+animation: float 5s infinite;
+color: #131212;
+padding: 10px;
+text-align: center;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+#icon{
+  margin-top: 4%;
+  width: 21%;
+  border-radius: 50%;
+  border: 4px solid rgb(176, 196, 222);
+  box-shadow: 0 0 20px rgba(176, 196, 222, 0.5);
+  transition: transform 0.5s ease;
+}
+
+#icon:hover {
+  transform: rotate(360deg);
+}
+
+#habilidades button{
+    background-color:rgba(102, 51, 153, 0.404);
+}
+
+
+#habilidades button a{
+    font-size: medium;
+    color: #000;
+    text-decoration: none;
+    font-family:'Indie Flower', cursive;
+}
+
+
+
+#passatempo h2{
+    font-size: xx-large;
+    font-weight: 900;
+    margin-bottom: 12%;
+}
+
+#icon{
+    width: 99px;
+    padding: 1vh;
+}
+
+#passatempo h3{
+    font-size: large;
+    font-weight: 900;
+    margin-bottom: 12%;
+    margin-left: 8%;
+}
+
+#passatempo p{
+    font-size: large;
+    margin-top:9%;
+    font-weight: 100;
+    margin-bottom: 12%;
+}
+
+@media only screen and (max-width: 768px) {
+
+body{
+  margin-right:10%;
+  padding: auto;
+  scroll-behavior: smooth;
+  margin-left:11%;
+  box-sizing: border-box;
+  font-family: 'Indie Flower', cursive;
+
+}
+
+
+main{
+    justify-content: center;
+    margin-right: 14%;
+    margin-left: 10%;
+   
+}
+
+
+#icon{
+
+  margin-left: 149px;
+  width: 30%;
+  border-radius: 50%;
+  border: 4px solid rgb(176, 196, 222);
+  box-shadow: 0 0 20px rgba(176, 196, 222, 0.5);
+  transition: transform 0.5s ease;
+}
+
+#icon:hover {
+  transform: rotate(360deg);
+}
+
+
+
+ #titulo{ 
+  position: absolute;
+  color: #0c0c0c;
+  font-size: 22px;
+  margin-bottom: 12%;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(70, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+  to {
+    width:14%
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+
+  .nav-list{
+    float:right;
+    margin-right: auto;
+    margin-left:3%;
+    margin-right: 10%;
+    position:relative;
+    gap:8%;
+  }
+  
+  .nav-list li {
+    margin-left: 3%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+  
+  .nav-list li  a {
+    text-align: center;
+    font-size: 16px;
+  
+  }
+
+    #sobre{
+    margin-top: 40%;
+    text-align: center;
+    margin-bottom: 60%;
+}
+
+    #icon{
+
+    margin-left: 4%;
+    width: 35%;
+    border: 4px solid rgb(176, 196, 222);
+    box-shadow: 0 0 20px rgba(176, 196, 222, 0.5);
+    transition: transform 0.5s ease;
+}
+
+    #icon:hover {
+    transform: rotate(360deg);
+  }
+  
+
+
+
+    #sobre h2{
+    margin-top: 40%;
+    text-align: center;
+}
+
+
+    #habilidades{
+    margin-top: 20%;
+    text-align: center;
+    margin-left: 2%;
+}
+
+
+    #habilidades h2{
+    text-align: center;
+}
+
+    #habilidades button{
+    margin-top: 16%;
+    text-align: center;
+    background-color:rgba(53, 51, 155, 0.404);
+}
+
+    #passatempo{
+    margin-bottom: 10%;
+    margin-top:40%;
+    margin-left: 10%;
+    }
+
+    #passatempo img{
+      width: 16%;
+      
+    }
+
+    #passatempo h2{
+
+    font-size: xx-large;
+    font-weight: 900;
+    margin-bottom: 12%;
+}
+
+    #passatempo p{
+    font-size: large;
+    margin-top:22%;
+    font-weight: 600;
+    margin-bottom: 12%;
+}
+
+
+#icon{
+  
+  width: 96px;
+  
+}
+
+    footer{
+    animation: float 5s infinite;
+    padding: 6%;
+}
+
+@keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-20px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+
+}
